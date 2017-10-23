@@ -1,0 +1,59 @@
+/*
+#f9a91a-->Laboratoria
+#f5f5f0-->color de fondo
+#e0e0d1-->color de active
+font-family -->san-serif
+*/
+body {/*selector tipo etiqueta*/
+  font-family: sans-serif;/*fuente tipografica*/
+}
+
+nav {/*señector tipo etiqueta html semantico*/
+  width: 200px;/*ancho*/
+}
+
+ul {/*selector tipo etiqueta lista desordenada*/
+  /*outline: 1px solid red;*/
+  list-style: none;/*quita la viñeta que tiene una lista desordenada*/
+  margin: 0px;/*no tiene margen*/
+  padding: 0px;/*no tiene relleno*/
+  width: 200px;/*ancho de la caja de la lista*/
+  line-height: 30px;/*separacion entre las lineas de la lista*/
+}
+li {/*selector tipo etiqueta cada linea de la lista*/
+  /*outline: 1px solid blue;*/
+  background: #f5f5f0;/*color de la cajita de la lista */
+}
+/* estados de los enlaces : love/hate link visited hover Avtive*/
+a {/*selector tipo etiqueta es cada link etiqueta vacia inline*/
+  /*outline: 1px solid green;*/
+  text-decoration: none;/*quita la linea subrayada  que un link tiene por defecto*/
+  display: block;/*vuelve en bloque a la etiqueta "a" que su comportamiento es inline*/
+  color: #000;/*color del texto*/
+  padding-left: 10px;/*relleno a la izquierda*/
+}
+
+/*selector tipo etiqueta con herencia y pseudo clase*/
+a:hover{/*efecto de sombreado sobre la etiqueta "a"*/
+  background: #e0e0d1;/*color de sombreado*/
+}
+
+a:active {/*efecto de sombreado sobre la etiqueta "a" para activar el link*/
+  background: #333;/*color cuando se activara o se haga clic ene ese link*/
+  color: white;/*conforme selecciona cambia el color de texto a blanco*/
+}
+ul li:first-child {/*selector tipo etiqueta con herencia y pseudo clase*/
+  background: #f9a91a;/*primera fila de la lista cambia el color*/
+}
+
+ul li:first-child a {/*selector tipo etiqueta con herencia y pseudo clase*/
+  color: white;/*primera fila de la lista le cambia el color al texto */
+}
+
+ul li:first-child a:hover {/*selector tipo etiqueta con herencia y pseudo clase*/
+  color: #000;
+}
+/*quiero a la etiqueta "a" que se encuentre dentro de la etiqueta "li" que es hijo de "ul"*/
+ul li:first-child a:active {/*selector tipo etiqueta con herencia y pseudo clase*/
+  color: white;
+}
