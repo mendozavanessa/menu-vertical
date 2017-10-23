@@ -1,7 +1,7 @@
 ## MENU VERTICAL
 
 Réplica del Siguiente esquema:
-!["menu vertical"](assets/img/menu-vertical.gif)
+!["menu-vertical"](assets/img/menu-vertical.gif)
 
 #### Objetivo Funcional
 Muestre la replica de un menu de barras verticalmente
